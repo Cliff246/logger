@@ -56,7 +56,7 @@ class Logger:
 		plot_data = {
 			"meta": {
 				"name": name,
-				"type": meta.get("type", "matrix"),
+				"type": meta.get("type", "Unknown"),
 				"template": template
 			},
 			"data": data
@@ -67,7 +67,7 @@ class Logger:
 		# Build the full plot entry
 		plot_entry = {
 			"name": name,
-			"type": meta.get("type", "matrix"),
+			"type": meta.get("type", "Unknown"),
 			"source": source_path,
 			"output": f"{name}.png"  # filename only!
 		}
